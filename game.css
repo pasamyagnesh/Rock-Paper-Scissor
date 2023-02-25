@@ -1,4 +1,12 @@
 .image-game{
     width: 500px;
     height: 500px;
+    padding: 5px 20px ;
+    align-items: center;
+
+}
+.choice-display{
+    align-items: center;
+       padding: 3px 20px ;
+    ;
 }
