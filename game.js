@@ -27,20 +27,20 @@ function generatecomputerChoice(){
     const randomNumber =  Math.floor(Math.random()*3 +1)
 
     if(randomNumber ===1){
-        computerChoice ='rock'
+        computerChoice ='Rock'
         randomImage(randomNumber)
     
 
 
     }
     if(randomNumber ===2){
-        computerChoice='paper'
+        computerChoice='Paper'
         randomImage(randomNumber)
 
      
     }
     if(randomNumber ===3){
-        computerChoice='scissor'
+        computerChoice='Scissor'
         randomImage(randomNumber)
 
     
@@ -50,7 +50,7 @@ function generatecomputerChoice(){
 
 }
 function userImageChange(y){
-    if(y ==='rock'){
+    if(y ==='Rock'){
         userImageCode=1
         userImageDisplay(userImageCode)
         
@@ -58,7 +58,7 @@ function userImageChange(y){
 
 
     }
-    if(y ==='paper'){
+    if(y ==='Paper'){
         userImageCode=2
         userImageDisplay(userImageCode)
 
@@ -68,7 +68,7 @@ function userImageChange(y){
 
      
     }
-    if(y==='scissor'){
+    if(y==='Scissor'){
         userImageCode=3
         userImageDisplay(userImageCode)
 
@@ -87,27 +87,27 @@ function generateResult()
     {
         result = 'its draw'
     }
-    if (computerChoice=== 'rock' && userChoice ==='paper')
+    if (computerChoice=== 'Rock' && userChoice ==='Paper')
     {
         result = 'You win'
     }
-    if (computerChoice=== 'rock' && userChoice ==='scissor')
+    if (computerChoice=== 'Rock' && userChoice ==='Scissor')
     {
         result = 'You lost'
     }    
-    if (computerChoice=== 'paper' && userChoice ==='rock')
+    if (computerChoice=== 'Paper' && userChoice ==='Rock')
     {
         result = 'You win'
     }
-    if (computerChoice=== 'paper' && userChoice ==='scissor')
+    if (computerChoice=== 'Paper' && userChoice ==='Scissor')
     {
         result = 'You lost'
     }
-    if (computerChoice=== 'scissor' && userChoice ==='rock')
+    if (computerChoice=== 'Scissor' && userChoice ==='Rock')
     {
         result = 'You win'
     }
-    if (computerChoice=== 'scissor' && userChoice ==='paper')
+    if (computerChoice=== 'Scissor' && userChoice ==='Paper')
     {
         result = 'You lost'
     }
