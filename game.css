@@ -10,8 +10,7 @@ body{
 }
 
 
-game-image{
-    background-color: rgb(0, 255, 102);
+.game-image{
     left: 100%;
     right: 100%;
     width: 100%;
@@ -20,28 +19,27 @@ game-image{
 
 
 .game-button{
-    background-color: yellow;
     width: 100%;
     height: 100%;
 }
-#image-game{
-    display: flex;
-    width: 350px;
-    height: 300px;
+.image-game{
+    width: 400px;
+    height: 400px;
     padding: 5px 20px ;
     align-items: center;
 
 }
-#choice-display{
+.choice-display{
     align-items: center;
-       font-family: 'Ubuntu', sans-serif;
+       font-family: 'JetBrains Mono', monospace;
        font-weight: 700;
        font-size: 40px;
+       color: black;
     
 }
 
 
-#btn{
+.btn{
     width: 350px;
     height: 50px ;
     background-color: #4338ca;
@@ -52,12 +50,12 @@ game-image{
     font-size: 23px;
     left: 200px;
 }
-#btn:hover{
+.btn:hover{
     background-color: #5e53d9;
     transition-duration: 0.3s;
 
 }
-#btn:focus{
+.btn:focus{
     background-color: #1f1c44;
 
 
