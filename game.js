@@ -1,12 +1,15 @@
 const computerChoiceDisplay = document.getElementById("computer-choice")
 const userChoiceDisplay =  document.getElementById("user-choice")
 const resultDisplay = document.getElementById("result")
+const scoreDisplay = document.getElementById("score")
+
 let userChoice
 let computerChoice
 let result
 let userImageCode
 let code1=0
 let resulCode1,resultCode2
+let score,count
 
 let code2=1
 
@@ -21,6 +24,12 @@ possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('cli
     changeImage()
 
 }) )
+
+function scoreIncrease(){
+
+
+
+}
 
 
 function generatecomputerChoice(){
