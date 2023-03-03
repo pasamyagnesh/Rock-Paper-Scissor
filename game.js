@@ -9,7 +9,7 @@ let result
 let userImageCode
 let code1=0
 let resulCode1,resultCode2
-let score,count
+let score=0,count
 
 let code2=1
 
@@ -26,6 +26,9 @@ possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('cli
 }) )
 
 function scoreIncrease(){
+    score+=1
+    scoreDisplay.innerHTML=score
+    
 
 
 
@@ -64,24 +67,17 @@ function userImageChange(y){
         userImageDisplay(userImageCode)
         
     
-
-
     }
     if(y ==='Paper'){
         userImageCode=2
         userImageDisplay(userImageCode)
 
 
-        
-        
-
      
     }
     if(y==='Scissor'){
         userImageCode=3
         userImageDisplay(userImageCode)
-
-
 
     
         
@@ -99,6 +95,10 @@ function generateResult()
     if (computerChoice=== 'Rock' && userChoice ==='Paper')
     {
         result = 'You win'
+        scoreIncrease()
+
+            
+        
     }
     if (computerChoice=== 'Rock' && userChoice ==='Scissor')
     {
@@ -107,14 +107,17 @@ function generateResult()
     if (computerChoice=== 'Paper' && userChoice ==='Rock')
     {
         result = 'You win'
+        scoreIncrease()
     }
     if (computerChoice=== 'Paper' && userChoice ==='Scissor')
     {
         result = 'You lost'
+        
     }
     if (computerChoice=== 'Scissor' && userChoice ==='Rock')
     {
         result = 'You win'
+        scoreIncrease()
     }
     if (computerChoice=== 'Scissor' && userChoice ==='Paper')
     {
