@@ -2,6 +2,10 @@ const computerChoiceDisplay = document.getElementById("computer-choice")
 const userChoiceDisplay =  document.getElementById("user-choice")
 const resultDisplay = document.getElementById("result")
 const scoreDisplay = document.getElementById("score")
+const lostDisplay = document.getElementById("lost")
+const matchDisplay = document.getElementById("match")
+
+
 
 let userChoice
 let computerChoice
@@ -9,7 +13,8 @@ let result
 let userImageCode
 let code1=0
 let resulCode1,resultCode2
-let score=0,count
+let score=0,lost =0,match=0,count
+
 
 let code2=1
 
@@ -24,14 +29,32 @@ possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('cli
     changeImage()
 
 }) )
+function matchIncrease()
+{
+    match+=1
+    matchDisplay.innerHTML=match
+
+
+
+}
 
 function scoreIncrease(){
     score+=1
+    match+=1
     scoreDisplay.innerHTML=score
+    matchDisplay.innerHTML=match
     
 
 
 
+}
+function lostIncrease(){
+    lost+=1
+    match+=1
+
+    lostDisplay.innerHTML=lost
+
+    matchDisplay.innerHTML=match
 }
 
 
@@ -91,6 +114,7 @@ function generateResult()
     if (computerChoice=== userChoice)
     {
         result = 'its draw'
+        matchIncrease()
     }
     if (computerChoice=== 'Rock' && userChoice ==='Paper')
     {
@@ -103,6 +127,7 @@ function generateResult()
     if (computerChoice=== 'Rock' && userChoice ==='Scissor')
     {
         result = 'You lost'
+        lostIncrease()
     }    
     if (computerChoice=== 'Paper' && userChoice ==='Rock')
     {
@@ -112,6 +137,7 @@ function generateResult()
     if (computerChoice=== 'Paper' && userChoice ==='Scissor')
     {
         result = 'You lost'
+        lostIncrease()
         
     }
     if (computerChoice=== 'Scissor' && userChoice ==='Rock')
@@ -122,6 +148,7 @@ function generateResult()
     if (computerChoice=== 'Scissor' && userChoice ==='Paper')
     {
         result = 'You lost'
+        lostIncrease()
     }
     resultDisplay.innerHTML = result
 }
