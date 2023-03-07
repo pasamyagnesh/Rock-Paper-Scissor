@@ -1,23 +1,26 @@
 Rock Paper Scissors Game
-Introduction
+Introduction:
+
+
 This is a simple rock-paper-scissors game developed using HTML, CSS, and JavaScript, along with the CSS framework Bootstrap. The game has a simple UI, where the user can select the choice of rock, paper, or scissors, and the game will randomly select its own choice, and the winner will be determined based on the traditional rules of rock-paper-scissors.
 
-Key Concepts
+Key Concepts:
+
 The following key concepts were used in this project:
 
-Functions
+Functions:
 Functions were used to implement the logic of the game. For example, there is a function to randomly select the game's choice and a function to determine the winner.
 
-Event Listeners
+Event Listeners:
 Event listeners were used to detect when the user clicks on a button to select their choice.
 
-Conditional Statements
+Conditional Statements:
 Conditional statements were used to determine the winner of the game based on the traditional rules of rock-paper-scissors.
 
-Bootstrap CSS Framework
+Bootstrap CSS Framework:
 The Bootstrap CSS framework was used to style the UI elements of the game.
 
-Installation
+Installation;
 To install the game, follow the steps given below:
 
 Download the project files from the repository or clone the repository.
@@ -42,7 +45,7 @@ Test the changes to make sure they work as intended.
 Submit a pull request with your changes.
 We will review the changes and merge them if they are acceptable.
 
-Conclusion
+Conclusion:
 This is a simple rock-paper-scissors game developed using HTML, CSS, and JavaScript, along with the Bootstrap CSS framework. The game has a simple UI, and the winner is determined based on the traditional rules of rock-paper-scissors. The game can be played in any web browser that supports HTML, CSS, and JavaScript.
 
 Thank you for using this game, and we hope you enjoy playing it.
