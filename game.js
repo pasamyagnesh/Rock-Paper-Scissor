@@ -17,6 +17,11 @@ let score=0,lost =0,match=0,count
 
 
 let code2=1
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
 
 const possibleChoices = document.querySelectorAll('button')
 
@@ -77,9 +82,6 @@ function generatecomputerChoice(){
     if(randomNumber ===3){
         computerChoice='Scissor'
         randomImage(randomNumber)
-
-    
-        
     }
     computerChoiceDisplay.innerHTML = computerChoice
 

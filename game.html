@@ -15,17 +15,21 @@
         <div class="game-area">
             <div class="row game-image" >
                 <div class="col-lg-4 image-1">
-                    <img class="image-game " src="images/img1.png" alt="">
-    
-                    <h2 class="choice-display">COMPUTER <span id="computer-choice"></span></h2>
-    
+                    <img class="image-game " src="images/img1.png" alt="">    
     
                 </div>
                 <div class="col-lg-4 image-2">
-                    <img class="image-game" src="images/img2.png" alt="">
+                    <img class="image-game" src="images/img2.png" alt="">    
     
-                    <h2 class="choice-display">YOUR <span id="user-choice"></span></h2>
-    
+                </div>
+           
+            </div>
+            <div class="row user-name" >
+                <div class="col-lg-4 image-1">    
+                    <h2 class="choice-display">AI: <span id="computer-choice"></span></h2>
+                </div>
+                <div class="col-lg-4 image-2">    
+                    <h2 class="choice-display">YOU:<span id="user-choice"></span></h2>
     
                 </div>
            
@@ -54,10 +58,11 @@
             </div>
             <div class="row game-button">
                 <div class="col col-lg-12">
-                  <button id="Rock" type="button" class="btn btn-primary btn-lg">Rock</button>
-                  <button id="Paper" type="button" class="btn btn-primary btn-lg">Paper</button>
+                  <button onclick="playAudio()"  id="Rock" type="button" class="btn btn-primary btn-lg">Rock</button>
+                  <button onclick="playAudio()"  id="Paper" type="button" class="btn btn-primary btn-lg">Paper</button>
       
-                  <button id="Scissor" type="button" class="btn btn-primary btn-lg">Scissor</button>
+                  <button onclick="playAudio()" id="Scissor" type="button" class="btn btn-primary btn-lg">Scissor</button>
+
                   
       
       
@@ -67,9 +72,10 @@
               </div>
         
         </div>
-        <div class="row ">
-           
-        </div>>
+       <audio id="myAudio">
+           <source src="audio/click.mp3" type="audio/mpeg">
+
+       </audio>
 
 
   
