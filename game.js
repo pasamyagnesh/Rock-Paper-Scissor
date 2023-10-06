@@ -22,7 +22,6 @@ var x = document.getElementById("myAudio");
 function playAudio() { 
   x.play(); 
 } 
-
 const possibleChoices = document.querySelectorAll('button')
 
 possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('click', (e) => {
